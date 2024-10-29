@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng pháp phục Bồ Đề</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        
+        <!-- Thanh Menu Cố Định ở đầu màn hình -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">🏠</a></li>
+                <li><a href="#dolamnu">Đồ lam nữ</a></li>
+                <li><a href="#dolamnam">Đồ lam nam</a></li>
+                <li><a href="#dochotre">Đồ cho bé</a></li>
+                <li><a href="#aotrang">Áo tràng</a></li>
+                <li><a href="#aodai">Áo dài</a></li>
+                <li><a href="#footer">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Khoảng trống có màu nâu giữa thanh menu và cây bồ đề -->
+        <div class="divider"></div>
+
+        <!-- Hình Cây Bồ Đề -->
+        <div class="hero">
+            <img src="/23 - Copy.jpg" alt="Hình cây bồ đề" class="hero-image">
+        </div>
+        
+        <!-- Tiêu đề -->
+        <div class="header-title">
+            <h1>Cửa hàng pháp phục Bồ Đề</h1>
+        </div>
+    </div>
+    <!-- Phần giới thiệu -->
+    <section id="gioithieu" class="introduction">
+        <h1><strong><u>Giới thiệu</u></strong></h1>
+        <marquee behavior="alternate" direction="right">
+            <p style="color: red; font-size: 24px;">Chào mừng đến với cửa hàng pháp phục Bồ Đề, nơi cung cấp các trang phục phật giáo chất lượng cao cho tất cả quý phật tử.<br> Chúng tôi tự hào mang đến những sản phẩm bền đẹp, tinh tế và phù hợp cho mọi nhà.</p>
+        </marquee>        
+    </section>
+    <!-- Các danh mục sản phẩm -->
+    <section id="dolamnu" class="product-section">
+        <div class="section-header">
+            <h2><u>Đồ lam nữ</u></h2>
+            <p class="product-description">
+                Đồ lam nữ tại Pháp Phục Bồ Đề được thiết kế với kiểu dáng trang nhã, phù hợp cho các buổi lễ chùa và sinh hoạt Phật giáo. Chất liệu mềm mại, thoáng mát mang lại sự thoải mái cho người mặc.
+            </p>
+        </div>
+        <div class="product-row">
+            <img src="/nữ1.jpg" alt="Đồ lam nữ 1" onclick="openModal(0, 'Đồ lam nữ')">
+            <img src="/nữ2.jpg" alt="Đồ lam nữ 2" onclick="openModal(1, 'Đồ lam nữ')">
+            <img src="/nữ3.jpg" alt="Đồ lam nữ 3" onclick="openModal(2, 'Đồ lam nữ')">
+            <img src="/nữ4.jpg" alt="Đồ lam nữ 4" onclick="openModal(3, 'Đồ lam nữ')">
+            <img src="/nữ5.jpg" alt="Đồ lam nữ 5" onclick="openModal(4, 'Đồ lam nữ')">
+        </div>
+    </section>
+
+    <section id="dolamnam" class="product-section">
+        <div class="section-header">
+            <h2><u>Đồ lam nam</u></h2>
+            <p class="product-description">
+                Đồ lam nam của chúng tôi được thiết kế đơn giản, thanh lịch, giúp người mặc dễ dàng thể hiện lòng thành kính và sự trang nghiêm khi tham gia các nghi lễ Phật giáo.
+            </p>
+        </div>
+        <div class="product-row">
+            <img src="path/to/image4.jpg" alt="Đồ lam nam 1" onclick="openModal(0, 'Đồ lam nam')">
+            <img src="path/to/image5.jpg" alt="Đồ lam nam 2" onclick="openModal(1, 'Đồ lam nam')">
+            <img src="path/to/image6.jpg" alt="Đồ lam nam 3" onclick="openModal(2, 'Đồ lam nam')">
+            <img src="path/to/image6.jpg" alt="Đồ lam nam 4" onclick="openModal(3, 'Đồ lam nam')">
+            <img src="path/to/image6.jpg" alt="Đồ lam nam 5" onclick="openModal(4, 'Đồ lam nam')">
+        </div>
+    </section>    
+    <section id="dochotre" class="product-section">
+        <div class="section-header">
+            <h2><u>Đồ cho bé</u></h2>
+            <p class="product-description">
+                Đồ cho bé tại Pháp Phục Bồ Đề được thiết kế với kích thước nhỏ gọn, dễ thương và chất liệu mềm mại, phù hợp cho trẻ nhỏ khi đến chùa cùng gia đình.
+            </p>
+        </div>
+        <div class="product-row">
+            <img src="path/to/image7.jpg" alt="Đồ cho bé 1" onclick="openModal(0, 'Đồ cho bé')">
+            <img src="path/to/image8.jpg" alt="Đồ cho bé 2" onclick="openModal(1, 'Đồ cho bé')">
+            <img src="path/to/image9.jpg" alt="Đồ cho bé 3" onclick="openModal(2, 'Đồ cho bé')">
+            <img src="path/to/image9.jpg" alt="Đồ cho bé 4" onclick="openModal(3, 'Đồ cho bé')">
+            <img src="path/to/image9.jpg" alt="Đồ cho bé 5" onclick="openModal(4, 'Đồ cho bé')">
+        </div>
+    </section>    
+    <section id="aotrang" class="product-section">
+        <div class="section-header">
+            <h2><u>Áo tràng</u></h2>
+            <p class="product-description">
+                Áo tràng là trang phục truyền thống trong các nghi lễ Phật giáo, được thiết kế kín đáo, nhã nhặn, giúp người mặc cảm nhận được sự thanh tịnh và trang nghiêm.
+            </p>
+        </div>
+        <div class="product-row">
+            <img src="path/to/image10.jpg" alt="Áo tràng 1" onclick="openModal(0, 'Áo tràng')">
+            <img src="path/to/image11.jpg" alt="Áo tràng 2" onclick="openModal(1, 'Áo tràng')">
+            <img src="path/to/image12.jpg" alt="Áo tràng 3" onclick="openModal(2, 'Áo tràng')">
+            <img src="path/to/image11.jpg" alt="Áo tràng 4" onclick="openModal(3, 'Áo tràng')">
+            <img src="path/to/image11.jpg" alt="Áo tràng 5" onclick="openModal(4, 'Áo tràng')">
+        </div>
+    </section>    
+    <section id="aodai" class="product-section">
+        <div class="section-header">
+            <h2><u>Áo dài</u></h2>
+            <p class="product-description">
+                Áo dài tại Pháp Phục Bồ Đề được thiết kế với phong cách truyền thống và hiện đại, phù hợp cho các dịp lễ đặc biệt và tạo nên vẻ đẹp dịu dàng, thanh lịch.
+            </p>
+        </div>
+        <div class="product-row">
+            <img src="path/to/image13.jpg" alt="Áo dài 1" onclick="openModal(0, 'Áo dài')">
+            <img src="path/to/image14.jpg" alt="Áo dài 2" onclick="openModal(1, 'Áo dài')">
+            <img src="path/to/image15.jpg" alt="Áo dài 3" onclick="openModal(2, 'Áo dài')">
+            <img src="path/to/image15.jpg" alt="Áo dài 4" onclick="openModal(3, 'Áo dài')">
+            <img src="path/to/image15.jpg" alt="Áo dài 5" onclick="openModal(4, 'Áo dài')">
+        </div>
+    </section>
+    
+    <!-- Cửa sổ Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+            <img id="modalImage" src="" alt="">
+            <div id="caption" class="caption"></div>
+            <span class="next" onclick="changeSlide(1)">&#10095;</span>
+        </div>
+    </div>
+
+    <script>
+        // Dữ liệu sản phẩm cho từng danh mục
+        const products = {
+            "Đồ lam nữ": [
+                { src: "nữ1.jpg", description: "Mô tả sản phẩm đồ lam nữ 1", contact: "Hotline: 0938-920-091" },
+                { src: "nữ2.jpg", description: "Mô tả sản phẩm đồ lam nữ 2", contact: "Hotline: 0938-920-091" },
+                { src: "nữ3.jpg", description: "Mô tả sản phẩm đồ lam nữ 3", contact: "Hotline: 0938-920-091" },
+                { src: "nữ4.jpg", description: "Mô tả sản phẩm đồ lam nữ 4", contact: "Hotline: 0938-920-091" },
+                { src: "nữ5.jpg", description: "Mô tả sản phẩm đồ lam nữ 5", contact: "Hotline: 0938-920-091" }
+            ],
+            "Đồ lam nam": [
+                { src: "path/to/image4.jpg", description: "Mô tả sản phẩm đồ lam nam 1", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image5.jpg", description: "Mô tả sản phẩm đồ lam nam 2", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image6.jpg", description: "Mô tả sản phẩm đồ lam nam 3", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image6.jpg", description: "Mô tả sản phẩm đồ lam nam 4", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image6.jpg", description: "Mô tả sản phẩm đồ lam nam 5", contact: "Hotline: 0938-920-091" }
+            ],
+            "Đồ cho bé": [
+                { src: "path/to/image7.jpg", description: "Mô tả sản phẩm đồ cho bé 1", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image8.jpg", description: "Mô tả sản phẩm đồ cho bé 2", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image9.jpg", description: "Mô tả sản phẩm đồ cho bé 4", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image9.jpg", description: "Mô tả sản phẩm đồ cho bé 5", contact: "Hotline: 0938-920-091" },
+            ],
+            "Áo tràng": [
+                { src: "path/to/image10.jpg", description: "Mô tả sản phẩm áo tràng 1", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image11.jpg", description: "Mô tả sản phẩm áo tràng 2", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image12.jpg", description: "Mô tả sản phẩm áo tràng 3", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image12.jpg", description: "Mô tả sản phẩm áo tràng 3", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image12.jpg", description: "Mô tả sản phẩm áo tràng 3", contact: "Hotline: 0938-920-091" }
+            ],
+            "Áo dài": [
+                { src: "path/to/image13.jpg", description: "Mô tả sản phẩm áo dài 1", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image14.jpg", description: "Mô tả sản phẩm áo dài 2", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image15.jpg", description: "Mô tả sản phẩm áo dài 3", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image15.jpg", description: "Mô tả sản phẩm áo dài 3", contact: "Hotline: 0938-920-091" },
+                { src: "path/to/image15.jpg", description: "Mô tả sản phẩm áo dài 3", contact: "Hotline: 0938-920-091" }
+            ]
+        };
+
+        let currentSlide = 0;
+        let currentCategory = "";
+
+        function openModal(index, category) {
+            currentSlide = index;
+            currentCategory = category;
+            showSlide(currentSlide);
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        function changeSlide(n) {
+            const categoryProducts = products[currentCategory];
+            currentSlide = (currentSlide + n + categoryProducts.length) % categoryProducts.length;
+            showSlide(currentSlide);
+        }
+
+        function showSlide(index) {
+            const categoryProducts = products[currentCategory];
+            document.getElementById("modalImage").src = categoryProducts[index].src;
+            document.getElementById("caption").innerHTML = `${categoryProducts[index].description}<br>${categoryProducts[index].contact}`;
+        }
+    </script>
+    <div class="why-choose-us">
+        <h2>Tại Sao Nên Chọn Pháp Phục Bồ Đề?</h2>
+        <p>
+            Pháp phục Bồ Đề là nơi cung cấp các trang phục phật giáo chất lượng cao, mang lại sự thoải mái và thanh tịnh trong từng đường kim mũi chỉ.
+            Chúng tôi cam kết mỗi sản phẩm đều được thiết kế cẩn thận, với chất liệu vải bền đẹp và mang đậm nét văn hóa tâm linh. Chọn pháp phục Bồ Đề, 
+            bạn không chỉ chọn sự tinh tế mà còn chọn lòng thành kính với đạo pháp.
+        </p>
+    </div>
+
+    <!-- Phần Vận Chuyển -->
+    <div class="shipping-info">
+        <h2>Vận Chuyển Nhanh Chóng Và An Toàn</h2>
+        <p>
+            Chúng tôi luôn nỗ lực giao hàng nhanh chóng đến tận tay khách hàng trên toàn quốc. Đội ngũ vận chuyển chuyên nghiệp và các dịch vụ đối tác uy tín đảm bảo
+            sản phẩm sẽ được giao đến đúng thời gian và trong tình trạng hoàn hảo nhất. Hãy yên tâm mua sắm với dịch vụ vận chuyển an toàn của chúng tôi.
+        </p>
+    </div>
+
+    <!-- Phần Footer -->
+    <footer>
+        <div id ="footer">
+            <h3>Liên Hệ</h3>
+            <p>Địa chỉ: chùa Pháp Bảo,Phước Tân,Biên Hòa ,Đồng Nai</p>
+            <p>Số điện thoại: <a href="tel:0938920091" class="contact-icon">&#9742; 0938-920-091</a></p>
+            <p>Zalo: <a href="tel:0984145330" class="contact-icon">&#9742; 0984-145-330</a></p>
+        </div>
+        <div class="map">
+            <h3>Bản Đồ</h3>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.8934528478626!2d106.90725107451868!3d10.895701456983403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174dfd848cef657%3A0x54cba69576a96654!2zQ2jDuWEgUGjDoXAgQuG6o28!5e0!3m2!1svi!2s!4v1730187039735!5m2!1svi!2s"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+    </footer>
+
+    </footer>
+    <script>
+        // Lấy modal và nút đóng modal
+        const modal = document.querySelector('.modal');
+        const closeModalButton = document.querySelector('.close');
+    
+        // Mở modal khi nhấp vào ảnh
+        document.querySelectorAll('.product-row img').forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = 'flex'; // Hiển thị modal khi nhấp vào ảnh
+            });
+        });
+    
+        // Đóng modal khi nhấp vào nút "x"
+        closeModalButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    
+        // Đóng modal khi nhấp ra ngoài vùng modal-content
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>

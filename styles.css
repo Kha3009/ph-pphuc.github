@@ -1,0 +1,329 @@
+
+
+/* Phần bao bọc chứa cây bồ đề, thanh menu, và tiêu đề với màu nền nâu */
+.header-container {
+    background-color: #54473F; /* Màu nền nâu */
+    padding-bottom: 10px;
+    text-align: center;
+}
+body, html {
+    overflow-x: hidden;
+}
+
+/* Giới hạn chiều rộng cho các phần tử */
+* {
+    box-sizing: border-box;
+    max-width: 100vw; /* Đảm bảo không vượt quá chiều rộng màn hình */
+}
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+/* Định dạng cho thanh menu nhỏ hơn */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #54473F;
+    padding: 10px 0; /* Kích thước nhỏ hơn cho thanh menu */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Căn chỉnh các mục trong menu */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    color:#CD5C08 ;
+    text-decoration: none;
+    padding: 8px 15px; /* Kích thước nhỏ hơn cho các mục trong menu */
+    display: inline-block;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #6D5D52;
+    border-radius: 5px;
+}
+
+/* Khoảng trống màu nâu giữa thanh menu và cây bồ đề */
+.divider {
+    height: 20px; /* Chiều cao khoảng trống */
+    background-color:#e1b12c; /* Màu nền nâu */
+}
+
+/* Hình Cây Bồ Đề */
+.hero {
+    width:100%;
+    height: 350px; /* Chiều cao cố định cho ảnh */
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh giữ tỷ lệ và không bị bể */
+}
+
+/* Tiêu đề căn giữa và chỉnh màu */
+.header-title {
+    color: #FFE5B4; /* Màu chữ sáng để nổi bật trên nền nâu */
+    padding: 10px 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Tạo khoảng trống để nội dung không bị che bởi thanh menu cố định */
+.content {
+    padding-top: 20px;
+}
+.introduction{
+    color:black;
+    text-align: center;
+}
+
+.why-choose-us, .shipping-info {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+}
+
+.why-choose-us {
+    background-color: #543310;
+}
+
+.shipping-info {
+    background-color: #3E3232;
+}
+
+/* Định dạng cho modal hình ảnh sản phẩm */
+/* Định dạng cho modal để ảnh không bị bể và phù hợp trên cả desktop và điện thoại */
+/* Định dạng cho mỗi section sản phẩm để mở rộng toàn màn hình */
+.product-section {
+    text-align: center;
+    background-color: #FFF;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%; /* Chiếm toàn màn hình */
+    max-width: none; /* Hủy giới hạn chiều rộng */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tiêu đề cho mỗi phần section */
+.product-section h2 {
+    color: #54473F;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0 20px 0;
+    line-height: 1.6;
+}
+
+/* Định dạng cho hàng sản phẩm */
+.product-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Định dạng cho hình ảnh sản phẩm */
+.product-row img {
+    width: 18%; /* Đảm bảo 5 hình nằm vừa trên một hàng */
+    max-width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.product-row img:hover {
+    transform: scale(1.05);
+}
+
+/* Cửa sổ Modal */
+/* Định dạng cho modal hình ảnh sản phẩm */
+/* Định dạng cho modal hình ảnh sản phẩm */
+/* Định dạng cho modal hình ảnh sản phẩm */
+/* Định dạng cho modal hình ảnh sản phẩm */
+/* Đảm bảo modal ban đầu ẩn đi */
+.modal {
+    display: none; /* Đảm bảo modal không hiển thị khi tải trang */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Khung chứa ảnh trong modal */
+.modal-content {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hình ảnh trong modal */
+.modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain; /* Đảm bảo ảnh giữ tỷ lệ khung hình */
+    border-radius: 5px;
+}
+
+/* Nút đóng modal */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 16px;
+    color: #333;
+    font-weight: bold;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Định dạng cho phần tiêu đề và mô tả với nền màu xám */
+.section-header {
+    background-color: #f0f0f0; /* Màu nền xám nhạt */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    color: #54473F;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.section-header .product-description {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
